@@ -1,0 +1,12 @@
+
+:root {
+    --background-color: #121212;
+    --baseColor: #8CC364;
+    --fontColor: rgba(255, 255, 255, 0.736);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

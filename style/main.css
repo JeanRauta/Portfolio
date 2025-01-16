@@ -1,0 +1,123 @@
+html{
+    background-color: black;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--fontColor);
+    min-height: 100vh;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+a{
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+.hover-event:hover{
+    color: rgb(255, 255, 255)!important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hover-event:hover > a{
+    color: rgb(255, 255, 255)!important;
+    text-decoration: none;
+}
+
+/* ----------------- */
+
+li{
+    width: 200px;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.356);
+    transition: .3s;
+}
+
+li:hover{
+    border-left: 10px solid var(--baseColor);
+    background-color: var(--baseColorLow);
+}
+
+li:hover > .menu-itens{
+    transform: translateX(8px);
+}
+
+
+.menu-itens{
+    transition: .3s;
+}
+
+
+/* ---------- */
+
+.card{
+    background-color: var(--background-color);
+    transition: .3s;
+}
+
+.card:hover{
+    background-color: var(--baseColorLow);
+}
+
+.center{
+    margin: auto;
+    max-width: 1300px;
+    min-width: min-content;
+}
+
+@media (max-width: 990px) {
+    nav{
+        display: none;
+    }
+
+header > div{
+    height: min-content !important;
+    justify-content: flex-start !important;      
+    }
+}
+
+@media (min-width:990px) {
+    header > div{
+        height: 100vh;      
+        }
+}
+
+small{
+    border: 1px solid var(--baseColor);
+    border-radius: 12px;
+    background-color: var(--baseColorLow);
+    color: var(--fontColor);
+    padding: 1px 5px;
+}
+
+/* ----------------- */
+
+.img01{
+    height: 100%;
+    width: 100%;
+    background-image: url(../static/ChordinoAPI.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img02{
+    height: 100%;
+    width: 100%;
+    background-image: url(../static/comeBem.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img03{
+    height: 100%;
+    width: 100%;
+    background-image: url(../static/chatAPI.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

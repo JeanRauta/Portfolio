@@ -1,60 +1,126 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean William Rauta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/root.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row p-2">
+    <div class="container-fluid p-0">
+        <div class="row p-0 center">
+
             <!-- Seção Esquerda -->
-            <header class="col-md-6 col-12 m-0 p-0">
-                <div class="m-0 p-0 sticky-top d-flex flex-column">
-                    <div class="ms-5 mt-5 mb-0 ps-5">
-                        <h1 class="fw-bolder mb-2">Jean William Rauta</h1>
-                        <h5>FullStack Developer</h5>
-                        <p>Desenvolvo sistemas WEB e APIs.</p>
+            <header class="col-lg-6 col-12 m-0 p-0">
+                <div class="sticky-top d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start justify-content-between">
+                    <div class="w-100 d-flex flex-column justify-content-between">
+                        <div class="mt-5 mb-0 px-3 px-lg-5">
+                            <h1 class="fw-bolder mb-2">Jean William Rauta</h1>
+                            <h5>FullStack Developer</h5>
+                            <p>Desenvolvo sistemas WEB e APIs.</p>
+                        </div>
+                        <nav class="w-100 px-3 px-lg-5 mt-3">
+                            <ul class="list-unstyled d-flex flex-column align-items-center align-items-lg-start">
+                                <li class="w-50 about">
+                                    <a href="#about" class="d-block py-2 py-xxl-3 px-3 text-decoration-none menu-itens">Sobre</a>
+                                </li>
+                                <li class="w-50 works">
+                                    <a href="#works" class="d-block py-2 py-xxl-3 px-3 text-decoration-none menu-itens">Trabalhos</a>
+                                </li>
+                                <li class="w-50 resume">
+                                    <a href="#resume" onclick="window.open('./static/curriculo.pdf')" class="d-block py-2 py-xxl-3 px-3 text-decoration-none menu-itens">Currículo</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="ms-5 mt-5 mb-5 ps-5 cursor-pointer">
-                        <ul type="none" class="p-0 m-0 d-flex flex-column">
-                            <li class="w-50 about">
-                                <div class="py-3 ps-2 menu-itens">About</div>
-                            </li>
-                            <li class="w-50 works">
-                                <div class="py-3 ps-2 menu-itens">Works</div>
-                            </li>
-                            <li class="w-50 resume">
-                                <div class="py-3 ps-2 menu-itens">Resume</div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="ms-5 mt-4 mb-5 ps-5">
+                    <div class="px-3 px-lg-5 mt-4 mb-5">
                         <h5>Contatos</h5>
-                        <p class="text-white-50"><i class="me-2 fs-5  bi bi-envelope-fill"></i> j34nwr@gmail.com</p>
-                        <p class="text-white-50"><i class="me-2 fs-5  bi bi-telephone-fill"></i> 51 99355-0790</p>
-                        <p class="hover-event text-white-50"><i class="me-2 fs-5  bi bi-github"></i> <a target="_blank" href="https://github.com/JeanRauta">github.com/JeanRauta</a></p>
-                        <p class="hover-event text-white-50"><i class="me-2 fs-5  bi bi-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/jean-wr-a35975276/">linkedin.com/in/jean-wr-a35975276/</a></p>
+                        <div class="contatos d-flex flex-column">
+                            <p class="text-white-50">
+                                <i class="me-2 fs-5 bi bi-envelope-fill"></i>
+                                <span class="contact-text">j34nwr@gmail.com</span>
+                            </p>
+                            <p class="text-white-50">
+                                <i class="me-2 fs-5 bi bi-telephone-fill"></i>
+                                <span class="contact-text">51 99355-0790</span>
+                            </p>
+                            <p class="hover-event text-white-50">
+                                <i class="me-2 fs-5 bi bi-github"></i>
+                                <a target="_blank" href="https://github.com/JeanRauta" class="text-decoration-none contact-text">github.com/JeanRauta</a>
+                            </p>
+                            <p class="hover-event text-white-50">
+                                <i class="me-2 fs-5 bi bi-linkedin"></i>
+                                <a target="_blank" href="https://www.linkedin.com/in/jean-wr/" class="text-decoration-none contact-text">linkedin.com/in/jean-wr-a35975276/</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </header>
 
             <!-- Seção Direita -->
-            <div class="col-md-6 col-12">
-                <div class="aboutFlag m-5 p-3">
-                    <h5>About</h5>
-                    <p>Tenho 17 anos e estou me formando no curso técnico em informática pela Escola Técnica Estadual Monteiro Lobato, em Taquara, RS. Durante o curso, adquiri uma base sólida em lógica de programação e Programação Orientada a Objetos (POO) utilizando Java, além de habilidades em criar e manipular bancos de dados SQL e NoSQL.</p>
-                    <p>Desenvolvi competências no uso e administração de sistemas Linux, no desenvolvimento web tanto no front-end quanto no back-end, e na criação de APIs utilizando Node.js e Flask. Também possuo conhecimentos em redes e infraestrutura.</p>
-                    <p>Atualmente, estou em busca de um estágio para finalizar meu curso técnico e iniciar o ensino superior na área de Tecnologia da Informação.</p>
+            <div class="col-lg-6 col-12">
+                <div class="row w-100 m-0 p-2 py-lg-5 px-md-5">
+                    <div class="aboutFlag py-0 py-lg-5">
+                        <h5 class="py-2">Sobre</h5>
+                        <p>Tenho 17 anos e estou me formando no curso técnico em informática pela Escola Técnica Estadual Monteiro Lobato, em Taquara, RS. Durante o curso, adquiri uma base sólida em lógica de programação e Programação Orientada a Objetos (POO) utilizando Java, além de habilidades em criar e manipular bancos de dados SQL e NoSQL.</p>
+                        <p>Desenvolvi competências no uso e administração de sistemas Linux, no desenvolvimento web tanto no front-end quanto no back-end, e na criação de APIs utilizando Node.js e Flask. Também possuo conhecimentos em redes e infraestrutura.</p>
+                        <p>Atualmente, estou em busca de um estágio para finalizar meu curso técnico e iniciar o ensino superior na área de Tecnologia da Informação.</p>
+                    </div>
+
+                    <!-- Works Section -->
+                    <div class="worksFlag">
+                        <h5 class="py-2">Últimos trabalhos feitos</h5>
+                        <div onclick="img01()" class="card border-0 cursor-pointer mb-3 p-2">
+                            <div class="row g-0">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="img-fluid rounded-start img01"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ChordinoAPI</h5>
+                                        <p class="card-text">API para a identificação de acordes a partir de vídeos do Youtube.</p>
+                                        <div class="d-flex flex-row gap-2 flex-wrap"><small>Python</small><small>Flask</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="img02()" class="card border-0 cursor-pointer mb-3 p-2">
+                            <div class="row g-0">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="img-fluid rounded-start img02"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ComeBem</h5>
+                                        <p class="card-text">Site para controle e adição de reservas de um restaurante. <span class="text-white-50">(trabalhei no back-end e no banco de dados do projeto)</span></p>
+                                        <div class="d-flex flex-row gap-2 flex-wrap"><small>Python</small><small>Flask</small><small>Jinja2</small><small>MongoDB</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="img03()" class="card border-0 cursor-pointer mb-3 p-2">
+                            <div class="row g-0">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="img-fluid rounded-start img03"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ChatAPI</h5>
+                                        <p class="card-text">
+                                            API simples de chat.</p>
+                                        <div class="d-flex flex-row gap-2 flex-wrap"><small>Nodejs</small><small>Express</small><small>MongoDB</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="./src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

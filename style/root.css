@@ -2,6 +2,7 @@
 :root {
     --background-color: #121212;
     --baseColor: #8CC364;
+    --baseColorLow: #8cc3642d;
     --fontColor: rgba(255, 255, 255, 0.736);
 }
 
